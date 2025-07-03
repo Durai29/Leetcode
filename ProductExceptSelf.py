@@ -1,4 +1,4 @@
-def productExceptSelf(nums):                    #  Leetcode : 238
+def productExceptSelf1(nums):                    #  Leetcode : 238
     l = len(nums)
     ans = [1]*l                                 # Create a ans array filled with ones, with the len of nums array.
 
@@ -12,5 +12,15 @@ def productExceptSelf(nums):                    #  Leetcode : 238
 
     return ans
 
-print(productExceptSelf([-1,1,0,-3,3]))
-print(productExceptSelf([1,2,3,4]))
+def productExceptSelf2(nums):                               # Leetcode : 238
+    prodL = [1]*len(nums)                                   # create 2 arrays
+    prodR = [1]*len(nums)                                   # to monitor the product of element left and right to it
+    for i in range(1,len(nums)):
+        prodL[i] = prodL[i-1] * nums[i-1]                   # find the left product
+    for i in range(len(nums)-1,0,-1):
+        prodR[i-1] = prodR[i] * nums[i]                     # find the right product
+    return [prodR[i]*prodL[i] for i in range(len(nums))]    # return the product of both prodL and prodR
+
+print(productExceptSelf1([1,2,3,4]))
+print(productExceptSelf2([-1,1,0,-3,3]))
+print(productExceptSelf1([1,2,3,4]))
