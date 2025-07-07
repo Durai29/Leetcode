@@ -31,13 +31,13 @@ def removeElement2(nums,val):                           # leetcode : 27
     return n                                            # finally return n
 
 # Test cases :
-print(removeElement([0,1,2,2,3,0,4,2], 2))        # Expected: 5
-print(removeElement([3,2,2,3], 3))               # Expected: 2
-print(removeElement([1], 1))                    # Expected: 0
-print(removeElement([4,5], 4))                  # Expected: 1
-print(removeElement([3,3,3,3], 3))              # Expected: 0
-print(removeElement([], 0))                    # Expected: 0
-print(removeElement([2,2,2,1,2,3,4], 2))        # Expected: 3
-print(removeElement([1,2,3,4,5], 6))            # Expected: 5
-print(removeElement([2,2,2], 1))                # Expected: 3
-print(removeElement([2,2,2], 2))                # Expected: 0
+print(removeElement2([0,1,2,2,3,0,4,2], 2))        # Expected: 5
+print(removeElement2([3,2,2,3], 3))               # Expected: 2
+print(removeElement2([1], 1))                    # Expected: 0
+print(removeElement2([4,5], 4))                  # Expected: 1
+print(removeElement2([3,3,3,3], 3))              # Expected: 0
+print(removeElement2([], 0))                    # Expected: 0
+print(removeElement2([2,2,2,1,2,3,4], 2))        # Expected: 3
+print(removeElement2([1,2,3,4,5], 6))            # Expected: 5
+print(removeElement2([2,2,2], 1))                # Expected: 3
+print(removeElement2([2,2,2], 2))                # Expected: 0
