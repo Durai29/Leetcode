@@ -48,3 +48,5 @@ current = result
 while current:
     print(current.val)
     current = current.next
+
+# Revised today ( 18 JUL 2025 )
