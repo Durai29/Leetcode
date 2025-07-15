@@ -18,4 +18,4 @@ def isValid(word):                                  # Leetcode : 3136
 print(isValid("234Adas"))
 print(isValid("b3"))
 print(isValid("a3$e"))
-print(isValid("Ya$"))
+print(isValid("Ya$")) 
