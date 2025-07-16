@@ -8,3 +8,4 @@ def carFleet(target,position,speed):                        # Leetcode : 853
     return len(stack)                                       # return the lenght of the stack
 
 print(carFleet(12,[10,8,0,5,3],[2,4,1,1,3]))
+print(carFleet([0,4,2],[2,1,3],10))
