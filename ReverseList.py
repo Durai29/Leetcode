@@ -27,3 +27,5 @@ current = result
 while current:
     print(current.val)
     current = current.next
+
+# Revised it today ( 17 JUL 2025 )
