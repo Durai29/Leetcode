@@ -1,0 +1,1 @@
+print(set('bcdfghjklmnpqrstvwxyz'+'bcdfghjklmnpqrstvwxyz'.upper()))
