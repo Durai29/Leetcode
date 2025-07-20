@@ -28,7 +28,20 @@ def dailyTemperatures(temperatures):                                    # Leetco
 # This one is a problem of type Decreasing monotonic stack.
 # I would also link to some reference video for understanding this topic better.
 
+# def dailyTemperatures(temperatures):
+    # answer = [0]*len(temperatures)
+    # stack = []
+    # for i in range(len(temperatures)):
+    #     while stack and temperatures[i] > stack[-1][1]:
+    #         # stack.pop()
+    #         prev = stack.pop()
+    #         answer[prev[0]] = i - prev[0]
+    #     stack.append((i,temperatures[i]))
+    # return answer
+
 print(dailyTemperatures([73,74,75,71,69,72,76,73]))
 print(dailyTemperatures([30,40,50,60]))
 print(dailyTemperatures([30,60,90]))
 print(dailyTemperatures([89,62,70,58,47,47,46,76,100,70]))
+
+# Revisied today ( 20 JUL 2025 )
