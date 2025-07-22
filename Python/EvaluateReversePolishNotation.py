@@ -42,3 +42,26 @@ print(evalRPN(["2","1","+","3","*"]))
 print(evalRPN(["4","13","5","/","+"]))
 print(evalRPN(["10","6","9","3","+","-11","","/","","17","+","5","+"]))
 print(evalRPN(["4","3","-"]))
+
+def evalRPN(tokens):
+    stack = []
+    for i in tokens:
+        # if stack:
+            if i not in {'+','-','/','*'}:
+                stack.append(int(i))
+            elif len(i) < 2:
+                b = stack.pop()
+                a = stack.pop()
+                if i == '+': stack.append(a+b)
+                elif i == '-': stack.append(a-b)
+                elif i == '*': stack.append(a*b)
+                elif i == '/': stack.append(int(a/b))
+
+            else:
+                stack.append(int(i))
+        # else:
+        #     stack.append(i)
+    return stack[-1]
+
+# same logic but small modification
+# Revised ( 22 Jul 2025 )
