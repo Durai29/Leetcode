@@ -28,4 +28,16 @@ while current:
     print(current.val)
     current = current.next
 
-# Revised it today ( 17 JUL 2025 )
+# Revised today ( 17 JUL 2025 )
+
+def reverseList(head):                  # Leetcode : 206
+    current = head                      # create a pointer for current node
+    prev = None                         # create a pointer to hold previous val
+    while current:                      # loop through until current
+        next_temp = current.next        # store next value of current here
+        current.next = prev             # current.next would be prev
+        prev = current                  # then store the current value in prev
+        current = next_temp             # then increment the current Node
+    return prev                         # return prev
+
+# Reviside today ( 25 JUL 2025 )
