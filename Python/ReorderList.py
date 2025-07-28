@@ -2,6 +2,8 @@ class ListNode:                                 # Linked list definition
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+    def __repr__(self):
+        return f"{self.val} -> {repr(self.next)}" # Best for visualisation in debugger
 
 def reorderList(head):                          # Leetcode : 143
     slow, fast = head, head                     # create a fast and slow pointer
@@ -36,6 +38,9 @@ def reorderList(head):                          # Leetcode : 143
 answer = reorderList(ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5))))))
 # print(answer)
 
-while answer:
-    print(answer.val)
-    answer = answer.next
+# while answer:
+#     print(answer.val)
+#     answer = answer.next
+print(answer)                                   # Just do this instead
+
+# Revised today (27 JUL 2025)
