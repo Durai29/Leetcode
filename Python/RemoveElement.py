@@ -30,6 +30,20 @@ def removeElement2(nums,val):                           # leetcode : 27
             i += 1
     return n                                            # finally return n
 
+# My method:
+def removeElement(nums, val):                                   # Leetcode : 27
+    left , right = 0, len(nums)-1                               # create 2 pointers
+    while left < right:                                         # use loop with constraint left < right so that pointers won't cross each other
+        if nums[right]!=val and nums[left] == val:              # if both left points val and right doesn't 
+            nums[left], nums[right] = nums[right], nums[left]   # swap both the elements
+            left+=1                                             # then converge both pointers
+            right-=1
+        elif nums[right]==val:                                  # if right points val; decrement it.
+            right-=1
+        else:                                                   # if left isn't val; increment it.
+            left+=1
+    return len(nums)-nums.count(val)                            # return the number of values except the count of val.
+
 # Test cases :
 print(removeElement2([0,1,2,2,3,0,4,2], 2))        # Expected: 5
 print(removeElement2([3,2,2,3], 3))               # Expected: 2
@@ -41,3 +55,5 @@ print(removeElement2([2,2,2,1,2,3,4], 2))        # Expected: 3
 print(removeElement2([1,2,3,4,5], 6))            # Expected: 5
 print(removeElement2([2,2,2], 1))                # Expected: 3
 print(removeElement2([2,2,2], 2))                # Expected: 0
+
+# Revised Today ( 5 AUG 2025 )
