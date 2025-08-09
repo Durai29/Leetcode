@@ -40,4 +40,5 @@ def reverseList(head):                  # Leetcode : 206
         current = next_temp             # then increment the current Node
     return prev                         # return prev
 
-# Reviside today ( 25 JUL 2025 )
+# Revised today ( 25 JUL 2025 )
+# Revised today ( 09 AUG 2025 ) 
