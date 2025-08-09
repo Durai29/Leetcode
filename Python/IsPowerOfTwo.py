@@ -1,0 +1,8 @@
+def isPowerOfTwo(n):                                    # Leetcode : 231
+    binary = bin(n)                                     # convert the integer to binary
+    return binary[2]=='1' and binary.count('1')==1      # check if it starts with 1 and the count of 1 is 1
+
+print(isPowerOfTwo(8))
+print(isPowerOfTwo(1))
+print(isPowerOfTwo(16))
+print(isPowerOfTwo(2))
