@@ -56,4 +56,5 @@ print(removeElement2([1,2,3,4,5], 6))            # Expected: 5
 print(removeElement2([2,2,2], 1))                # Expected: 3
 print(removeElement2([2,2,2], 2))                # Expected: 0
 
-# Revised Today ( 5 AUG 2025 )
+# Revised Today ( 05 AUG 2025 )
+# Revised Today ( 12 AUG 2025 )
