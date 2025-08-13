@@ -48,3 +48,5 @@ print(reorderPowerOf2(128))
 print(reorderPowerOf2(46))        
 print(reorderPowerOf2(10))        
 print(reorderPowerOf2(56635))        
+
+# Revised Today ( 13 AUG 2025 )
