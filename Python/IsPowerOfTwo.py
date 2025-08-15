@@ -7,4 +7,11 @@ print(isPowerOfTwo(1))
 print(isPowerOfTwo(16))
 print(isPowerOfTwo(2))
 
+# Method 2
+def isPowerOfTwo_2(n):            # Leetcode : 231
+        if n == 0 :             # edge condition for 0
+            return False        # return false
+        return n & (n-1) == 0   # else do a and bit operation to check with n 
+												        # and n-1 should return 0
+
 # Revised Today ( 15 AUG 2025 )
