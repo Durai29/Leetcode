@@ -6,3 +6,5 @@ print(isPowerOfTwo(8))
 print(isPowerOfTwo(1))
 print(isPowerOfTwo(16))
 print(isPowerOfTwo(2))
+
+# Revised Today ( 15 AUG 2025 )
