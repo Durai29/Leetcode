@@ -20,3 +20,5 @@ def twoSum2(nums, target):              # Leetcode : 1
 
 
 print(twoSum2([3,2,4],6))
+
+# Revised Today ( 17 AUG 2025 )
