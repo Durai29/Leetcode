@@ -33,3 +33,5 @@ def validAnagram3(s,t):                     # Leetcode : 242
     return all(i==0 for i in count)         # return True if all the values in count array is 0
 
 print(validAnagram3("anagram","nagaram"))
+
+# Revised Today ( 18 AUG 2025 )
