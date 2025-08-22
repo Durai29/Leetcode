@@ -19,3 +19,5 @@ def removeNthFromEnd(head, n):
     return dummy.next                       # return head, dummy is pointing to head
 
 answer = removeNthFromEnd(ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5))))),2)    
+
+# Revised Today ( 21 AUG 2025 )
