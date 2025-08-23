@@ -32,3 +32,5 @@ def validParentheses2(s):                       # Leetcode : 20
     return stack == []                          # finally check if there any element remaining in the stack
 
 print(validParentheses2("()[]{}{"))
+
+# Revised Today ( 23 AUG 2025 )
