@@ -21,3 +21,5 @@ def isPalindrome2(s):    # Leetcode : 125
     return True                                 # return True if the loop has executed successfully
 
 print(isPalindrome2("0P"))
+
+# Revised Today ( 25 AUG 2025 )
