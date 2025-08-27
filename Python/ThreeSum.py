@@ -23,3 +23,5 @@ def threeSum(nums):                             # Leetcode : 15
 
 # Example usage
 print(threeSum([-1, 0, 1, 2, -1, -4]))          # expected output: [[-1, -1, 2], [-1, 0, 1]]
+
+# Revised Today ( 27 AUG 2025 )
