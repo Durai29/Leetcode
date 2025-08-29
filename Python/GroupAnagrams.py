@@ -8,3 +8,5 @@ def groupAnagrams(strs):                                        # Leetcode : 49
             dic[j].append(i)
     return list(dic.values())                                   # return the list of values
 print(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
+
+# Revised Today ( 29 AUG 2025 )
