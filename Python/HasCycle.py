@@ -15,3 +15,5 @@ def hasCycle(head):                 # Leetcode : 141
         if slow == fast:            # if the slow and faster pointers meet 
             return True             # there's a loop 
     return False                    # else return false
+
+# Revised Today ( 30 AUG 2025 )
