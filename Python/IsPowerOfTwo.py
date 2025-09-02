@@ -15,3 +15,4 @@ def isPowerOfTwo_2(n):            # Leetcode : 231
 												        # and n-1 should return 0
 
 # Revised Today ( 15 AUG 2025 )
+# Revised Today ( 02 SEP 2025 )
