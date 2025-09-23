@@ -19,6 +19,24 @@ public class ValidParentheses {
         }
         return stack.size()==0;
     }
+
+        public boolean isValid_1(String s){
+        Stack<Character> stack = new Stack<>();
+        for(Character ch : s.toCharArray()){
+            if(ch=='[' || ch=='{' || ch=='(') stack.push(ch);
+            else{
+                if(stack.empty()) return false;
+                char open = stack.pop();
+                if((ch==')' && open !='(') ||
+                   (ch==']' && open !='[') ||
+                   (ch=='}' && open !='{')){
+                    return false;
+                   }
+            }
+        }
+        return stack.isEmpty();
+    }
+    
     public static void main(String[] arg){
         System.out.println(isValid("()"));
     }
