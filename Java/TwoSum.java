@@ -20,3 +20,5 @@ public class TwoSum {                                                       // L
         System.out.println("Indices: " + result[0] + ", " + result[1]);
     }
 }
+
+// Revised Today (25 SEP 2025)
