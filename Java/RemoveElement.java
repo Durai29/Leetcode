@@ -13,3 +13,5 @@ public class RemoveElement {
         System.out.println(removeElement(new int[]{3,2,2,3}, 3));
     }
 }
+
+// Revised Today (26 SEP 2025)
