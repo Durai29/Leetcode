@@ -8,3 +8,5 @@ public class UglyNumber {
         return n==1;
     }
 }
+
+// Revised Today (27 SEP 2025)
