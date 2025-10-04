@@ -1,0 +1,21 @@
+public class MinStack {
+    public MinStack(){
+        this.stack 
+    }
+    
+    public void push(int val) {
+        
+    }
+    
+    public void pop() {
+        
+    }
+    
+    public int top() {
+        
+    }
+    
+    public int getMin() {
+        
+    }
+}
