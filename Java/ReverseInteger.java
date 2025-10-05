@@ -1,25 +1,19 @@
-import java.util.*;
-
-class ReverseInteger {
-    public static int reverse(int num) {
-        int rev=0, rem = 0;
-        if (num < Integer.MIN_VALUE || num > Integer.MAX_VALUE) return 0;
-        while(num != 0){
-            rem = num % 10;
-            rev = rev * 10 + rem;
-            if (rev < Integer.MIN_VALUE || rev > Integer.MAX_VALUE) return 0;
-            num/=10;
+class Solution {
+    public int reverse(int x) {
+        int rev = 0;
+        boolean flag = false;
+        if(x < 0){
+            x *= -1;
+            flag = true;
         }
+        while(x != 0){
+            int temp = x % 10;
+            if(rev < Integer.MIN_VALUE/10 || (rev < Integer.MIN_VALUE/10 && temp < -8)) return 0;
+            if(rev > Integer.MAX_VALUE/10 || (rev > Integer.MAX_VALUE/10 && temp > 7)) return 0;
+            rev = rev * 10 + temp;
+            x /= 10;
+        }
+        if(flag) rev *= -1;
         return rev;
     }
-
-    public static void main(String arg[]){
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Enter: ");
-        // int n = scn.nextInt();
-        int n = 1534236469;
-        System.out.println(reverse(n));
-        scn.close();
-    }
 }
-
