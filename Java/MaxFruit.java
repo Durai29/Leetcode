@@ -1,3 +1,4 @@
+import java.util.*;
 class MaxFruit {
     public int totalFruit(int[] fruits) {
          Map<Integer,Integer> frequency = new HashMap<>();
