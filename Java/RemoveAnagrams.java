@@ -24,3 +24,4 @@ public class RemoveAnagrams {
         System.out.println(removeAnagrams(new String[]{"abba", "baba", "bbaa", "cd", "cd"}));
     }
 }
+
