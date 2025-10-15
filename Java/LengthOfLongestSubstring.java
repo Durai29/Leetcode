@@ -18,3 +18,4 @@ public class LengthOfLongestSubstring {
         return count;
     }
 }
+
