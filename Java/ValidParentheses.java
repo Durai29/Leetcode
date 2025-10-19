@@ -41,3 +41,5 @@ public class ValidParentheses {
         System.out.println(isValid("()"));
     }
 }
+
+// Revised Today (19 OCT 2025)
