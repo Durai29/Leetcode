@@ -6,3 +6,4 @@ public class PowerOfTwo {                           // Leetcode : 231
 }
 
 // Revised Today (19 SEP 2025)
+// Revised Today (25 OCT 2025)
